@@ -2,15 +2,23 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Arogya Pharmacy</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+  <link rel="stylesheet" href="style.css">
+
+  <!-- font text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+    rel="stylesheet">
 
 
 
@@ -18,128 +26,596 @@
 
 <body>
 <header>
-  <div class="navbar bg-[#DEE9FF] shadow-sm px-[200px] py-[40px]">
+  <div class="navbar bg-white shadow-sm px-[200px] py-[10px] fixed top-0 left-0 w-full z-50">
     <div class="navbar-start">
       <img class="si" src="img/arogya.png" alt="" style="width:100px; height:auto;">
       <div class="ml-[14px] flex flex-col items-center">
-        <span class="text-2xl font-bold text-[#1364FF]">Arogya</span>
-        <span class="text-sm text-gray-600">store</span>
+        <span class="text-2xl font-bold text-[#092a1c]">
+          P H A R M A C Y
+        </span>
+        <span class="text-sm text-gray-600">s t o r e</span>
       </div>
     </div>
 
-<div class="navbar-center hidden lg:flex">
-  <ul class="menu menu-horizontal px-1 space-x-8">
-    <li>
-      <a class="text-lg font-semibold text-gray-700 transition duration-300 hover:text-[#1364FF] hover:scale-110">
-        Home
-      </a>
-    </li>
-    <li>
-      <a class="text-lg font-semibold text-gray-700 transition duration-300 hover:text-[#1364FF] hover:scale-110">
-        About Us
-      </a>
-    </li>
-    <li>
-      <a class="text-lg font-semibold text-gray-700 transition duration-300 hover:text-[#1364FF] hover:scale-110">
-        Products
-      </a>
-    </li>
-    <li>
-      <details>
-        <summary class="text-lg font-semibold text-gray-700 transition duration-300 hover:text-[#1364FF] hover:scale-110">
-          Categories
-        </summary>
-        <ul class="p-2 bg-base-100 w-40 z-1">
-          <li><a>For Men</a></li>
-          <li><a>For Women</a></li>
-        </ul>
-      </details>
-    </li>
-    <li>
-      <a class="text-lg font-semibold text-gray-700 transition duration-300 hover:text-[#1364FF] hover:scale-110">
-        Contact Us
-      </a>
-    </li>
-  </ul>
-</div>
-
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1 space-x-8">
+        <li>
+          <a class="text-lg font-semibold text-gray-700 transition duration-300 hover:text-[#1364FF] hover:scale-110 ">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="about/about.html" class="text-lg font-semibold text-gray-700 transition duration-300 hover:text-[#1364FF] hover:scale-110">
+            About Us
+          </a>
+        </li>
+        <li>
+          <a href="products/index.html"
+            class="text-lg font-semibold text-gray-700 transition duration-300 hover:text-[#1364FF] hover:scale-110">
+            Products
+          </a>
+        </li>
+        <li>
+          <a href="review/review.html"
+            class="text-lg font-semibold text-gray-700 transition duration-300 hover:text-[#1364FF] hover:scale-110">
+            Reviews
+          </a>
+        </li>
+        <li>
+          <a href="contactus/contactus.html" class="text-lg font-semibold text-gray-700 transition duration-300 hover:text-[#1364FF] hover:scale-110">
+            Contact Us
+          </a>
+        </li>
+      </ul>
+    </div>
 
     <div class="navbar-end">
-      <a class="btn bg-[#1364FF] text-white">Registration</a>
+      <a class="btn bg-[#092a1c] text-white">Registration</a>
     </div>
   </div>
 </header>
 
-<main>
-<section class="bg-[#DEE9FF] flex flex-col lg:flex-row items-center justify-between px-[200px] py-[50px]">
-  <div class="max-w-lg">
-    <p class="text-pink-600 font-semibold mb-4">Pharmacy Store</p>
-    <h1 class="text-4xl font-bold text-gray-900 leading-snug mb-6">
-      Your Trusted <br /> Pharmacy Store
-    </h1>
-    <p class="text-gray-700 mb-8">
-      Libero diam auctor tristique hendrerit in eu vel id. Nec leo amet suscipit nulla.
-      Nullam vitae sit tempus diam.
-    </p>
-    <div class="flex items-center space-x-2">
-      <div class="flex space-x-2">
-        <img src="img/customar1.jpg.jpeg" alt="Customer 1" class="w-10 h-10 rounded-full object-cover">
-        <img src="img/customer2.jpg.jpeg" alt="Customer 2" class="w-10 h-10 rounded-full object-cover">
-        <img src="img/customer3.jpg.jpeg" alt="Customer 3" class="w-10 h-10 rounded-full object-cover">
-        <img src="img/customer4.jpg.jpeg" alt="Customer 4" class="w-10 h-10 rounded-full object-cover">
+
+  <main>
+
+    <section
+      class="bg-[linear-gradient(to_right,#064e3b,#10b981)] flex flex-col lg:flex-row items-center justify-between px-6 lg:px-[200px] py-[50px] pt-[170px]">
+      <div class="max-w-lg">
+        <p class="text-pink-600 font-semibold mb-4 anim-fade-up">Pharmacy Store</p>
+        <h1 class="text-4xl font-bold text-white leading-snug mb-6 anim-fade-up anim-fade-up-delay-1">
+          Your Trusted <br /> Pharmacy Store
+        </h1>
+        <p class="text-white mb-8 anim-fade-up anim-fade-up-delay-2">
+          Quality medicines, health essentials, and expert advice, all in one place.
+          Order online and get your prescriptions delivered right to your door.
+        </p>
+        <div class="flex items-center space-x-2 anim-fade-up anim-fade-up-delay-3 stat-group">
+          <div class="flex space-x-2 avatar-stack">
+            <img src="img/customar1.jpg.jpeg" alt="Customer 1"
+              class="w-10 h-10 rounded-full object-cover border-2 border-white">
+            <img src="img/customer2.jpg.jpeg" alt="Customer 2"
+              class="w-10 h-10 rounded-full object-cover border-2 border-white">
+            <img src="img/customer3.jpg.jpeg" alt="Customer 3"
+              class="w-10 h-10 rounded-full object-cover border-2 border-white">
+            <img src="img/customer4.jpg.jpeg" alt="Customer 4"
+              class="w-10 h-10 rounded-full object-cover border-2 border-white">
+          </div>
+          <div class="ml-4">
+            <p class="text-pink-600 font-semibold stat-number">100k+</p>
+            <p class="text-white text-sm">Satisfied Customers</p>
+          </div>
+        </div>
       </div>
-      <div class="ml-4">
-        <p class="text-pink-600 font-semibold">100k+</p>
-        <p class="text-gray-700 text-sm">Satisfied Customers</p>
+
+      <!-- Image switcher: click a thumbnail to change the main picture -->
+      <div class="mt-10 lg:mt-0 flex flex-col items-center anim-fade-scale">
+        <div class="w-[650px] h-[300px] rounded-lg overflow-hidden shadow-md main-image-frame">
+          <img id="mainImage" src="img/pharmacy.jpg.jpeg" alt="Pharmacy Banner"
+            class="w-full h-full object-cover transition duration-300">
+        </div>
+
+        <div class="flex space-x-3 mt-4">
+          <button class="thumb-btn w-16 h-16 rounded-lg overflow-hidden ring-2 ring-pink-600"
+            data-img="img/pharmacy.jpg.jpeg">
+            <img src="img/pharmacy.jpg.jpeg" alt="Pharmacy view 1" class="w-full h-full object-cover">
+          </button>
+          <button class="thumb-btn w-16 h-16 rounded-lg overflow-hidden ring-2 ring-transparent hover:ring-pink-300"
+            data-img="img/pharmacy2.jpg.jpeg">
+            <img src="img/pharmacy2.jpg.jpeg" alt="Pharmacy view 2" class="w-full h-full object-cover">
+          </button>
+          <button class="thumb-btn w-16 h-16 rounded-lg overflow-hidden ring-2 ring-transparent hover:ring-pink-300"
+            data-img="img/pharmacy3.jpg.jpeg">
+            <img src="img/pharmacy3.jpg.jpeg" alt="Pharmacy view 3" class="w-full h-full object-cover">
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- Features Section -->
+    <section
+      class="bg-white flex flex-col lg:flex-row justify-between items-center px-[200px] py-[60px] space-y-8 lg:space-y-0">
+      <div
+        class="flex flex-col items-center lg:items-start text-center lg:text-left transition-transform duration-300 hover:scale-110">
+        <div class="text-[#1364FF] text-4xl mb-2">
+          <i class="fa-solid fa-truck"></i>
+        </div>
+        <h3 class="font-semibold text-lg text-black">Free Shipping</h3>
+        <p class="text-gray-500 text-sm">Order Over $600</p>
+      </div>
+
+      <!-- 2️⃣ Quick Payment -->
+      <div
+        class="flex flex-col items-center lg:items-start text-center lg:text-left transition-transform duration-300 hover:scale-110">
+        <div class="text-[#1364FF] text-4xl mb-2">
+          <i class="fa-solid fa-credit-card"></i>
+        </div>
+        <h3 class="font-semibold text-lg text-black">Quick Payment</h3>
+        <p class="text-gray-500 text-sm">100% Secure</p>
+      </div>
+      <div
+        class="flex flex-col items-center lg:items-start text-center lg:text-left transition-transform duration-300 hover:scale-110">
+        <div class="text-[#1364FF] text-4xl mb-2">
+          <i class="fa-solid fa-gift"></i>
+        </div>
+        <h3 class="font-semibold text-lg text-black">Big Cashback</h3>
+        <p class="text-gray-500 text-sm">Over 50% Cashback</p>
+      </div>
+
+      <div
+        class="flex flex-col items-center lg:items-start text-center lg:text-left transition-transform duration-300 hover:scale-110">
+        <div class="text-[#1364FF] text-4xl mb-2">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <h3 class="font-semibold text-lg text-black">24/7 Support</h3>
+        <p class="text-gray-500 text-sm">Ready for You</p>
+      </div>
+    </section>
+
+    <!-- offer sectioin -->
+
+    <section class="flex flex-col lg:flex-row justify-center items-center gap-5 px-[100px] py-[60px]">
+      <!-- Left Card -->
+      <div class="bg-[#DEE9FF] rounded-xl shadow-md flex flex-row overflow-hidden w-[500px] h-[300px] 
+              transform transition duration-500 hover:scale-105 hover:shadow-xl animate-fadeIn">
+        <!-- Text Part -->
+        <div class="p-8 flex flex-col justify-center w-1/2">
+          <p class="font-semibold text-gray-800 mb-2">Big Sale</p>
+          <h2 class="text-3xl font-bold text-black leading-tight mb-2">
+            Get an Extra <br><span class="text-[#1364FF]">50% Off</span>
+          </h2>
+          <p class="text-gray-600 text-sm">
+            Libero diam auctor tristique hendrerit in eu vel id.
+          </p>
+        </div>
+        <!-- Image Part -->
+        <div class="w-1/2 h-full">
+          <img src="img/earphone.jpg.jpeg" alt="Sale Banner" class="w-full h-full object-cover">
+        </div>
+      </div>
+
+      <!-- Middle Card (with Image) -->
+      <div class="rounded-xl shadow-md w-[500px] h-[300px] overflow-hidden relative 
+              transform transition duration-500 hover:scale-105 hover:shadow-xl animate-fadeIn">
+        <img src="img/middle.jpg.jpeg" alt="Special Offer Banner" class="absolute inset-0 w-full h-full object-cover">
+        <div class="relative z-10 p-8 flex flex-col justify-between h-full text-white bg-black/40">
+          <div>
+            <p class="text-xl mb-2">Exclusive Deal</p>
+          </div>
+          <div>
+            <h2 class="text-4xl font-bold mb-4">Buy 1 Get 1</h2>
+            <button
+              class="bg-white text-[#1364FF] font-medium px-6 py-2 rounded-full hover:bg-gray-200 transition duration-300">
+              Explore Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Card -->
+      <div class="rounded-xl shadow-md w-[500px] h-[300px] overflow-hidden relative 
+              transform transition duration-500 hover:scale-105 hover:shadow-xl animate-fadeIn">
+        <img src="img/shopping.jpg.jpeg" alt="Discount Banner" class="absolute inset-0 w-full h-full object-cover">
+        <div class="relative z-10 p-8 flex flex-col justify-between h-full text-white bg-black/40">
+          <div>
+            <p class="text-xl mb-2">Take the discount for the first <br> shopping on our website</p>
+          </div>
+          <div>
+            <h2 class="text-4xl font-bold mb-4">30%</h2>
+            <button
+              class="bg-white text-black font-medium px-6 py-2 rounded-full hover:bg-gray-200 transition duration-300">
+              Shop Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- our quality section -->
+
+    <section class="flex flex-col lg:flex-row justify-between items-center px-[200px] py-[60px] gap-10">
+      <!-- Left Content -->
+      <div class="max-w-xl">
+        <p class="text-pink-600 font-semibold mb-4">Why Us</p>
+        <h2 class="text-4xl font-bold text-black leading-snug mb-10">
+          Our Commitment to <br /> Quality
+        </h2>
+
+        <!-- Feature 1 -->
+        <div class="flex items-start mb-8">
+          <div class="bg-[#1364FF] text-white p-4 rounded-lg mr-4">
+            <i class="fa-solid fa-prescription-bottle text-2xl"></i>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg text-black mb-1">Wide Product Range</h3>
+            <p class="text-gray-600 text-sm">
+              Libero diam auctor tristique hendrerit in eu vel id. Nec leo amet suscipit nulla.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="flex items-start mb-8">
+          <div class="bg-[#1364FF] text-white p-4 rounded-lg mr-4">
+            <i class="fa-solid fa-shield-halved text-2xl"></i>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg text-black mb-1">Quality Assurance</h3>
+            <p class="text-gray-600 text-sm">
+              Libero diam auctor tristique hendrerit in eu vel id. Nec leo amet suscipit nulla.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="flex items-start">
+          <div class="bg-[#1364FF] text-white p-4 rounded-lg mr-4">
+            <i class="fa-solid fa-leaf text-2xl"></i>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg text-black mb-1">Eco-Friendly Practices</h3>
+            <p class="text-gray-600 text-sm">
+              Libero diam auctor tristique hendrerit in eu vel id. Nec leo amet suscipit nulla.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div
+        class="w-[800px] h-[500px] rounded-lg overflow-hidden shadow-md transform transition duration-500 hover:scale-105 hover:shadow-xl animate-fadeIn">
+        <img src="img/delivery.webp" alt="Quality Commitment" class="w-full h-full object-cover">
+      </div>
+    </section>
+
+    <!-- our services -->
+
+    <section class="bg-[linear-gradient(to_right,#064e3b,#10b981)] text-white px-[200px] py-[80px]">
+      <div class="flex flex-col lg:flex-row justify-between items-center mb-12">
+        <!-- Left Text Block -->
+        <div class="max-w-xl ">
+          <p class="text-gray-300 text-xl font-semibold mb-2">Services</p>
+          <div>
+            <h2 class="text-2xl font-bold leading-snug mb-4">
+              Comprehensive Pharmacy Services
+            </h2>
+            <p class="text-gray-200 text-sm max-w-md">
+              Libero diam auctor tristique hendrerit in eu vel id. Nec leo amet suscipit nulla.
+              Nullam vitae sit tempus diam.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Circle Button -->
+        <button
+          class="border border-white rounded-full w-[160px] h-[160px] flex items-center justify-center text-white font-semibold hover:bg-white hover:text-[#1364FF] transition duration-300">
+          All Services
+        </button>
+      </div>
+
+      <!-- Service Cards -->
+      <div class="flex flex-col lg:flex-row justify-between items-start gap-8">
+        <!-- Card 1 -->
+        <div class="flex flex-col items-start">
+          <div
+            class="bg-[#1E1E1E] rounded-lg w-[420px] h-[220px] relative overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl">
+            <img src="img/presciption.webp" alt="Prescription Filling"
+              class="absolute inset-0 w-full h-full object-cover opacity-80">
+            <button
+              class="absolute right-6 bottom-6 bg-[#1364FF] text-white w-12 h-12 rounded-full flex justify-center items-center text-xl hover:bg-[#0f4ed0] transition duration-300">→</button>
+          </div>
+          <div class="mt-4">
+            <p class="text-gray-300 text-xl">01 / <span class="font-semibold text-white">Prescription Filling</span></p>
+            <p class="text-gray-200 text-xs mt-1">Nec leo amet suscipit nulla vitae sit.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flex flex-col items-start">
+          <div
+            class="bg-[#1E1E1E] rounded-lg w-[420px] h-[220px] relative overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl">
+            <img src="img/delivery.jpg.jpeg" alt="Home Delivery"
+              class="absolute inset-0 w-full h-full object-cover opacity-80">
+            <button
+              class="absolute right-6 bottom-6 bg-[#1364FF] text-white w-12 h-12 rounded-full flex justify-center items-center text-xl hover:bg-[#0f4ed0] transition duration-300">→</button>
+          </div>
+          <div class="mt-4">
+            <p class="text-gray-300 text-xl">02 / <span class="font-semibold text-white">Home Delivery</span></p>
+            <p class="text-gray-200 text-xs mt-1">Nec leo amet suscipit nulla vitae sit.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flex flex-col items-start">
+          <div
+            class="bg-[#1E1E1E] rounded-lg w-[420px] h-[220px] relative overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl">
+            <img src="img/health.jpg.jpeg" alt="Health Consultations"
+              class="absolute inset-0 w-full h-full object-cover opacity-80">
+            <button
+              class="absolute right-6 bottom-6 bg-[#1364FF] text-white w-12 h-12 rounded-full flex justify-center items-center text-xl hover:bg-[#0f4ed0] transition duration-300">→</button>
+          </div>
+          <div class="mt-4">
+            <p class="text-gray-300 text-xl">03 / <span class="font-semibold text-white">Health Consultations</span></p>
+            <p class="text-gray-200 text-xs mt-1">Nec leo amet suscipit nulla vitae sit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Doctor -->
+    <section class="bg-white text-black px-[200px] py-[80px]">
+      <div class="flex flex-col lg:flex-row justify-between items-center mb-12 gap-16">
+        <div class="max-w-xl">
+          <p class="text-pink-600 font-semibold mb-2">Team</p>
+          <h2 class="text-4xl font-bold leading-snug mb-4">
+            The Heart of Our <br /> Pharmacy
+          </h2>
+          <p class="text-gray-600 text-sm max-w-md">
+            Libero diam auctor tristique hendrerit in eu vel id. Nec leo amet suscipit nulla.
+            Nullam vitae sit tempus diam.
+          </p>
+        </div>
+
+        <!-- Right Circle Button -->
+        <button
+          class="border border-gray-300 rounded-full w-[160px] h-[160px] flex items-center justify-center text-gray-700 font-semibold hover:bg-[#1364FF] hover:text-white transition duration-300">
+          All Team
+        </button>
+      </div>
+
+      <!-- Team Cards -->
+      <div class="flex flex-col lg:flex-row justify-between items-start gap-8">
+        <!-- Card 1 -->
+        <div class="flex flex-col items-start">
+          <div
+            class="bg-[#1E1E1E] rounded-lg w-[320px] h-[320px] relative overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl">
+            <img src="img/doctor1.jpg.jpeg" alt="Dr. Emily Roberts" class="absolute inset-0 w-full h-full object-cover">
+            <button
+              class="absolute right-6 bottom-6 bg-[#1364FF] text-white w-12 h-12 rounded-full flex justify-center items-center text-xl hover:bg-[#0f4ed0] transition duration-300">→</button>
+          </div>
+          <div class="mt-4">
+            <span class="text-gray-500 text-xs border border-gray-300 rounded-full px-3 py-1">Chief Pharmacist</span>
+            <h3 class="font-semibold text-lg mt-2">Dr. Emily Roberts, PharmD</h3>
+            <p class="text-gray-500 text-sm mt-1">Work experience – 15 years</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flex flex-col items-start">
+          <div
+            class="bg-[#1E1E1E] rounded-lg w-[320px] h-[320px] relative overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl">
+            <img src="img/doctor2.jpg.jpeg" alt="Dr. Michael Chang" class="absolute inset-0 w-full h-full object-cover">
+            <button
+              class="absolute right-6 bottom-6 bg-[#1364FF] text-white w-12 h-12 rounded-full flex justify-center items-center text-xl hover:bg-[#0f4ed0] transition duration-300">→</button>
+          </div>
+          <div class="mt-4">
+            <span class="text-gray-500 text-xs border border-gray-300 rounded-full px-3 py-1">Medical Advisor</span>
+            <h3 class="font-semibold text-lg mt-2">Dr. Michael Chang, MD</h3>
+            <p class="text-gray-500 text-sm mt-1">Work experience – 12 years</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flex flex-col items-start">
+          <div
+            class="bg-[#1E1E1E] rounded-lg w-[320px] h-[320px] relative overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl">
+            <img src="img/doctor3.jpg.jpeg" alt="Lisa Davis" class="absolute inset-0 w-full h-full object-cover">
+            <button
+              class="absolute right-6 bottom-6 bg-[#1364FF] text-white w-12 h-12 rounded-full flex justify-center items-center text-xl hover:bg-[#0f4ed0] transition duration-300">→</button>
+          </div>
+          <div class="mt-4">
+            <span class="text-gray-500 text-xs border border-gray-300 rounded-full px-3 py-1">Director of Health
+              Services</span>
+            <h3 class="font-semibold text-lg mt-2">Lisa Davis, RN, BSN</h3>
+            <p class="text-gray-500 text-sm mt-1">Work experience – 8 years</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- review section -->
+
+    <section class="bg-white text-black px-[200px] py-[80px]">
+      <!-- Header Row -->
+      <div class="flex flex-col lg:flex-row justify-between items-center mb-12 gap-16">
+        <!-- Left Text Block -->
+        <div class="max-w-xl">
+          <p class="text-pink-600 font-semibold mb-2">Review</p>
+          <h2 class="text-4xl font-bold leading-snug mb-4">
+            Testimonials That <br /> Inspire Us
+          </h2>
+          <p class="text-gray-600 text-sm max-w-md">
+            Libero diam auctor tristique hendrerit in eu vel id. Nec leo amet suscipit nulla.
+            Nullam vitae sit tempus diam.
+          </p>
+        </div>
+
+        <!-- Right Circle Button -->
+        <button
+          class="border border-gray-300 rounded-full w-[160px] h-[160px] flex items-center justify-center text-gray-700 font-semibold hover:bg-[#1364FF] hover:text-white transition duration-300">
+          All Review
+        </button>
+      </div>
+
+      <!-- Testimonial Content -->
+      <div class="flex flex-col lg:flex-row items-start gap-6 mt-10">
+        <!-- Reviewer Image -->
+        <div class="w-[80px] h-[80px] rounded-full overflow-hidden">
+          <img src="img/customer3.jpg.jpeg" alt="Reviewer" class="w-full h-full object-cover">
+        </div>
+
+        <!-- Quote and Text -->
+        <div class="flex flex-col">
+          <div class="flex items-center mb-4">
+            <div
+              class="border border-gray-300 rounded-full w-10 h-10 flex items-center justify-center text-[#1364FF] text-xl font-bold">
+              “</div>
+          </div>
+          <p class="italic text-gray-800 leading-relaxed max-w-2xl">
+            "Pharmacy Store is my go‑to for over‑the‑counter medications and health products.
+            They have a wide selection, and their website makes it easy to order online.
+            The only improvement I'd suggest is expanding their beauty and skincare section."
+          </p>
+          <div class="mt-6">
+            <h3 class="font-semibold text-black">Raisha Jannat</h3>
+            <p class="text-gray-500 text-sm">24 years old</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Dots -->
+      <div class="flex items-center gap-2 mt-10">
+        <div class="w-3 h-3 bg-gray-800 rounded-full"></div>
+        <div class="w-3 h-3 bg-gray-400 rounded-full"></div>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <footer class="bg-[linear-gradient(to_right,#064e3b,#10b981)] text-white px-[100px] py-[70px] animate-fadeIn">
+    <!-- Top Section -->
+    <div class="flex justify-between items-center mb-10">
+      <div class="flex items-center gap-4">
+        <!-- Brand Logo -->
+        <img src="img/arogya.png" alt="Brand Logo" class="w-12 h-12 rounded-full object-cover">
+        <div>
+          <h2 class="text-2xl font-bold">Pharmacy</h2>
+          <p class="text-base text-gray-200">store.</p>
+        </div>
+      </div>
+
+      <!-- Scroll to Top Button -->
+      <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+        class="bg-white text-[#1364FF] w-12 h-12 rounded-full flex justify-center items-center text-2xl font-bold hover:bg-gray-200 transition duration-300">
+        ↑
+      </button>
+    </div>
+
+    <hr class="border-gray-300 mb-10" />
+
+    <!-- Middle Section -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-10">
+      <!-- Company -->
+      <div>
+        <h3 class="font-semibold text-xl mb-4">Company</h3>
+        <ul class="space-y-3 text-gray-200 text-base">
+          <li><a href="#" class="hover:text-white transition">About Us</a></li>
+          <li><a href="#" class="hover:text-white transition">Products</a></li>
+          <li><a href="#" class="hover:text-white transition">Services</a></li>
+          <li><a href="#" class="hover:text-white transition">Blog & News</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div>
+        <h3 class="font-semibold text-xl mb-4">Resources</h3>
+        <ul class="space-y-3 text-gray-200 text-base">
+          <li><a href="#" class="hover:text-white transition">Educational</a></li>
+          <li><a href="#" class="hover:text-white transition">Mental Health Resources</a></li>
+          <li><a href="#" class="hover:text-white transition">Nutrition</a></li>
+          <li><a href="#" class="hover:text-white transition">Medication Guides</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div>
+        <h3 class="font-semibold text-xl mb-4">Follow Our Social Media</h3>
+        <div class="flex flex-wrap gap-4">
+          <button
+            class="bg-[#1E1E1E] text-white px-5 py-2 rounded-full text-base hover:bg-gray-700 transition">Instagram</button>
+          <button
+            class="bg-[#1E1E1E] text-white px-5 py-2 rounded-full text-base hover:bg-gray-700 transition">Youtube</button>
+          <button
+            class="bg-[#1E1E1E] text-white px-5 py-2 rounded-full text-base hover:bg-gray-700 transition">Facebook</button>
+          <button
+            class="bg-[#1E1E1E] text-white px-5 py-2 rounded-full text-base hover:bg-gray-700 transition">LinkedIn</button>
+          <button
+            class="bg-[#1E1E1E] text-white px-5 py-2 rounded-full text-base hover:bg-gray-700 transition">Twitter</button>
+          <button class="bg-[#1E1E1E] text-white px-5 py-2 rounded-full text-base hover:bg-gray-700 transition">Tik
+            Tok</button>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="w-[350px] h-[400px] rounded-lg mt-10 lg:mt-0 overflow-hidden">
-    <img src="img/pharmecy.jpg.jpeg" alt="Pharmacy Banner" class="w-full h-full object-cover">
-  </div>
-</section>
 
+    <hr class="border-gray-300 mb-6" />
 
-<!-- Features Section -->
-<section class="bg-white flex flex-col lg:flex-row justify-between items-center px-[200px] py-[60px] space-y-8 lg:space-y-0">
-  <!-- 1️⃣ Free Shipping -->
-  <div class="flex flex-col items-center lg:items-start text-center lg:text-left transition-transform duration-300 hover:scale-110">
-    <div class="text-[#1364FF] text-4xl mb-2">
-      <i class="fa-solid fa-truck"></i>
+    <!-- Bottom Section -->
+    <div class="flex flex-col lg:flex-row justify-between items-center text-base text-gray-200">
+      <p>Copyright © 2026 Pharmacy Store | Design by Moitry</p>
+      <div class="flex gap-6 mt-4 lg:mt-0">
+        <a href="#" class="hover:text-white transition">Terms of Use</a>
+        <a href="#" class="hover:text-white transition">Privacy Policy</a>
+      </div>
     </div>
-    <h3 class="font-semibold text-lg text-black">Free Shipping</h3>
-    <p class="text-gray-500 text-sm">Order Over $600</p>
-  </div>
+  </footer>
 
-  <!-- 2️⃣ Quick Payment -->
-  <div class="flex flex-col items-center lg:items-start text-center lg:text-left transition-transform duration-300 hover:scale-110">
-    <div class="text-[#1364FF] text-4xl mb-2">
-      <i class="fa-solid fa-credit-card"></i>
-    </div>
-    <h3 class="font-semibold text-lg text-black">Quick Payment</h3>
-    <p class="text-gray-500 text-sm">100% Secure</p>
-  </div>
-  <div class="flex flex-col items-center lg:items-start text-center lg:text-left transition-transform duration-300 hover:scale-110">
-    <div class="text-[#1364FF] text-4xl mb-2">
-      <i class="fa-solid fa-gift"></i>
-    </div>
-    <h3 class="font-semibold text-lg text-black">Big Cashback</h3>
-    <p class="text-gray-500 text-sm">Over 50% Cashback</p>
-  </div>
+  <!-- Fade-in Animation -->
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
 
-  <div class="flex flex-col items-center lg:items-start text-center lg:text-left transition-transform duration-300 hover:scale-110">
-    <div class="text-[#1364FF] text-4xl mb-2">
-      <i class="fa-solid fa-user"></i>
-    </div>
-    <h3 class="font-semibold text-lg text-black">24/7 Support</h3>
-    <p class="text-gray-500 text-sm">Ready for You</p>
-  </div>
-</section>
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fadeIn {
+      animation: fadeIn 1.2s ease-out;
+    }
+  </style>
 
 
+  <script>
+    const mainImage = document.getElementById('mainImage');
+    const thumbs = document.querySelectorAll('.thumb-btn');
 
+    thumbs.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // swap the main image with a quick fade/scale-in animation
+        mainImage.src = btn.getAttribute('data-img');
+        mainImage.classList.remove('fade-swap');
+        // force reflow so the animation can replay every click
+        void mainImage.offsetWidth;
+        mainImage.classList.add('fade-swap');
 
-</main>
+        // update the highlighted ring so the active thumbnail is obvious
+        thumbs.forEach(b => b.classList.remove('ring-pink-600'));
+        thumbs.forEach(b => b.classList.add('ring-transparent'));
+        btn.classList.remove('ring-transparent');
+        btn.classList.add('ring-pink-600');
+      });
+    });
+  </script>
+
 
 </body>
 
