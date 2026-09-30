@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Arogya Pharmacy</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- font text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+    rel="stylesheet">
+
+
+
+</head>
+
+<body>
+<header>
+  <div class="navbar bg-white shadow-sm px-[200px] py-[10px] fixed top-0 left-0 w-full z-50">
+    <div class="navbar-start">
+      <img class="si" src="img/arogya.png" alt="" style="width:100px; height:auto;">
+      <div class="ml-[14px] flex flex-col items-center">
+        <span class="text-2xl font-bold text-[#092a1c]">
+          P H A R M A C Y
+        </span>
+        <span class="text-sm text-gray-600">s t o r e</span>
+      </div>
+    </div>
+
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1 space-x-8">
+        <li>
+          <a href="../index.html" class="text-lg font-semibold text-gray-700 transition duration-300 hover:text-[#1364FF] hover:scale-110 ">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="../about/about.html" class="text-lg font-semibold text-gray-700 transition duration-300 hover:text-[#1364FF] hover:scale-110">
+            About Us
+          </a>
+        </li>
+        <li>
+          <a href="../products/index.html"
+            class="text-lg font-semibold text-gray-700 transition duration-300 hover:text-[#1364FF] hover:scale-110">
+            Products
+          </a>
+        </li>
+        <li>
+          <a href="../review/review.html"
+            class="text-lg font-semibold text-gray-700 transition duration-300 hover:text-[#1364FF] hover:scale-110">
+            Reviews
+          </a>
+        </li>
+        <li>
+          <a href="../contactus/contactus.html" class="text-lg font-semibold text-gray-700 transition duration-300 hover:text-[#1364FF] hover:scale-110">
+            Contact Us
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navbar-end">
+      <a class="btn bg-[#092a1c] text-white">Registration</a>
+    </div>
+  </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="bg-[linear-gradient(to_right,#064e3b,#10b981)] flex flex-col items-center justify-center px-6 lg:px-[200px] py-[100px] pt-[150px] text-center pb-32">
+      <p class="text-pink-600 font-semibold mb-4">Testimonials</p>
+      <h1 class="text-4xl md:text-5xl font-bold text-white leading-snug mb-6">
+        Real Stories, Real Healing
+      </h1>
+      <p class="text-white max-w-2xl text-lg">
+        Discover why thousands of people trust Pharmacy Store for their daily healthcare needs. Your health is our priority, and your feedback is our motivation.
+      </p>
+    </section>
+
+    <!-- Overall Rating Stats -->
+    <section class="px-6 lg:px-[200px] -mt-20 relative z-10">
+      <div class="bg-white rounded-2xl shadow-xl p-8 flex flex-col md:flex-row items-center justify-between gap-8">
+        <div class="flex flex-col items-center justify-center text-center w-full md:w-1/3 border-b md:border-b-0 md:border-r border-gray-200 pb-6 md:pb-0 md:pr-6">
+          <h2 class="text-6xl font-bold text-black mb-2">4.9</h2>
+          <div class="text-yellow-400 text-2xl mb-2">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="text-gray-500 font-medium">Based on <span id="totalReviewCount">10000</span>+ Reviews</p>
+        </div>
+
+        <div class="w-full md:w-2/3 flex flex-col gap-3">
+          <div class="flex items-center gap-4">
+            <span class="text-gray-700 font-medium w-12 text-right">5 Star</span>
+            <div class="w-full h-3 bg-gray-200 rounded-full overflow-hidden">
+              <div class="h-full bg-yellow-400 w-[90%]"></div>
+            </div>
+            <span class="text-gray-500 text-sm w-10">90%</span>
+          </div>
+          <div class="flex items-center gap-4">
+            <span class="text-gray-700 font-medium w-12 text-right">4 Star</span>
+            <div class="w-full h-3 bg-gray-200 rounded-full overflow-hidden">
+              <div class="h-full bg-yellow-400 w-[7%]"></div>
+            </div>
+            <span class="text-gray-500 text-sm w-10">7%</span>
+          </div>
+          <div class="flex items-center gap-4">
+            <span class="text-gray-700 font-medium w-12 text-right">3 Star</span>
+            <div class="w-full h-3 bg-gray-200 rounded-full overflow-hidden">
+              <div class="h-full bg-yellow-400 w-[2%]"></div>
+            </div>
+            <span class="text-gray-500 text-sm w-10">2%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review Grid Section -->
+    <section class="px-6 lg:px-[200px] py-[80px]">
+      <div id="reviewsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Review Card 1 -->
+        <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-500 transform hover:-translate-y-2 border border-gray-100 flex flex-col h-full">
+          <div class="flex justify-between items-start mb-4">
+            <div class="flex items-center gap-4">
+              <div class="w-14 h-14 rounded-full bg-[#DEE9FF] text-[#1364FF] font-bold flex items-center justify-center text-xl border-2 border-[#1364FF]/20">A</div>
+              <div>
+                <h4 class="font-bold text-black text-lg">Ahmed Rahman</h4>
+                <p class="text-green-500 text-xs font-semibold flex items-center gap-1">
+                  <i class="fa-solid fa-circle-check"></i> Verified Buyer
+                </p>
+              </div>
+            </div>
+            <div class="text-gray-300 text-4xl opacity-50"><i class="fa-solid fa-quote-right"></i></div>
+          </div>
+          <div class="text-yellow-400 text-sm mb-3">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-gray-600 leading-relaxed flex-grow">
+            "Getting my monthly diabetic medications used to be a hassle. Now, Pharmacy Store delivers it to my home exactly when I need it. Their customer service is top-notch!"
+          </p>
+          <div class="mt-5 flex gap-2">
+            <span class="bg-[#DEE9FF] text-[#1364FF] text-xs px-3 py-1 rounded-full font-medium">Fast Delivery</span>
+          </div>
+        </div>
+
+        <!-- Review Card 2 -->
+        <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-500 transform hover:-translate-y-2 border border-gray-100 flex flex-col h-full">
+          <div class="flex justify-between items-start mb-4">
+            <div class="flex items-center gap-4">
+              <div class="w-14 h-14 rounded-full bg-pink-100 text-pink-600 font-bold flex items-center justify-center text-xl border-2 border-pink-600/20">S</div>
+              <div>
+                <h4 class="font-bold text-black text-lg">Sadia Islam</h4>
+                <p class="text-green-500 text-xs font-semibold flex items-center gap-1">
+                  <i class="fa-solid fa-circle-check"></i> Verified Buyer
+                </p>
+              </div>
+            </div>
+            <div class="text-gray-300 text-4xl opacity-50"><i class="fa-solid fa-quote-right"></i></div>
+          </div>
+          <div class="text-yellow-400 text-sm mb-3">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+          </div>
+          <p class="text-gray-600 leading-relaxed flex-grow">
+            "I love their 'upload prescription' feature. It's incredibly fast. The pharmacists even called me to explain the dosage. Highly recommended for everyone."
+          </p>
+          <div class="mt-5 flex gap-2">
+            <span class="bg-pink-100 text-pink-600 text-xs px-3 py-1 rounded-full font-medium">Great Support</span>
+          </div>
+        </div>
+
+        <!-- Review Card 3 -->
+        <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-500 transform hover:-translate-y-2 border border-gray-100 flex flex-col h-full">
+          <div class="flex justify-between items-start mb-4">
+            <div class="flex items-center gap-4">
+              <div class="w-14 h-14 rounded-full bg-emerald-100 text-emerald-600 font-bold flex items-center justify-center text-xl border-2 border-emerald-600/20">R</div>
+              <div>
+                <h4 class="font-bold text-black text-lg">Raisha Jannat</h4>
+                <p class="text-green-500 text-xs font-semibold flex items-center gap-1">
+                  <i class="fa-solid fa-circle-check"></i> Verified Buyer
+                </p>
+              </div>
+            </div>
+            <div class="text-gray-300 text-4xl opacity-50"><i class="fa-solid fa-quote-right"></i></div>
+          </div>
+          <div class="text-yellow-400 text-sm mb-3">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-gray-600 leading-relaxed flex-grow">
+            "Pharmacy Store is my go-to for over-the-counter medications. They have a wide selection, and their website makes it easy to order online. Great discounts too!"
+          </p>
+          <div class="mt-5 flex gap-2">
+            <span class="bg-emerald-100 text-emerald-600 text-xs px-3 py-1 rounded-full font-medium">Quality Products</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Load More Button -->
+      <div id="loadMoreContainer" class="flex justify-center mt-12">
+        <button id="loadMoreBtn" onclick="loadMoreReviews()" class="border-2 border-[#1364FF] text-[#1364FF] font-semibold px-8 py-3 rounded-full hover:bg-[#1364FF] hover:text-white transition duration-300">
+          Load More Reviews (12+)
+        </button>
+      </div>
+    </section>
+
+    <!-- Write a Review Section -->
+    <section class="px-6 lg:px-[200px] py-[80px] bg-white">
+      <div class="bg-[#1E1E1E] rounded-3xl overflow-hidden flex flex-col lg:flex-row shadow-2xl">
+        
+        <!-- Left Graphic/Text -->
+        <div class="w-full lg:w-2/5 bg-[linear-gradient(to_bottom_right,#1364FF,#0f4ed0)] p-12 text-white flex flex-col justify-center">
+          <h2 class="text-4xl font-bold mb-4">Share Your Experience</h2>
+          <p class="text-blue-100 mb-8 leading-relaxed">
+            Your feedback helps us improve and helps others make informed choices about their healthcare. Leave a review and let us know how we did!
+          </p>
+          <div class="mt-auto">
+            <p class="font-semibold text-lg">We listen. We care.</p>
+          </div>
+        </div>
+
+        <!-- Right Form & Success Wrapper -->
+        <div class="w-full lg:w-3/5 p-12 relative bg-white min-h-[420px] flex flex-col justify-center">
+          
+          <!-- Form -->
+          <form id="reviewForm" onsubmit="handleReviewSubmit(event)" class="space-y-6">
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Rate Your Experience</label>
+              <div class="flex gap-2 text-3xl text-gray-300 cursor-pointer" id="starRating">
+                <i class="fa-solid fa-star star-btn hover:text-yellow-400 transition" data-value="1"></i>
+                <i class="fa-solid fa-star star-btn hover:text-yellow-400 transition" data-value="2"></i>
+                <i class="fa-solid fa-star star-btn hover:text-yellow-400 transition" data-value="3"></i>
+                <i class="fa-solid fa-star star-btn hover:text-yellow-400 transition" data-value="4"></i>
+                <i class="fa-solid fa-star star-btn hover:text-yellow-400 transition" data-value="5"></i>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                <input type="text" id="reviewerName" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#1364FF] transition" placeholder="John Doe">
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Service Used</label>
+                <select id="reviewerService" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#1364FF] transition">
+                  <option value="Home Delivery">Home Delivery</option>
+                  <option value="Prescription Filling">Prescription Filling</option>
+                  <option value="Health Consultation">Health Consultation</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1">Your Review</label>
+              <textarea id="reviewerText" required rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#1364FF] transition resize-none" placeholder="Tell us about your experience..."></textarea>
+            </div>
+
+            <button type="submit" class="w-full md:w-auto bg-[#1364FF] text-white font-bold px-8 py-3 rounded-lg hover:bg-[#0f4ed0] transition duration-300">
+              Submit Review
+            </button>
+          </form>
+
+          <!-- Success Message (Hidden by default) -->
+          <div id="reviewSuccess" class="hidden flex flex-col items-center justify-center text-center py-6">
+            <div class="w-20 h-20 bg-green-100 text-green-500 rounded-full flex justify-center items-center text-4xl mb-6 shadow-md">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <h3 class="text-3xl font-bold text-black mb-3">Thank You!</h3>
+            <p class="text-gray-600 mb-6 max-w-md">Your review has been successfully submitted and added to the top of the list.</p>
+            <button type="button" onclick="resetReviewForm()" class="text-[#1364FF] font-semibold border-b-2 border-[#1364FF] hover:text-[#0f4ed0] hover:border-[#0f4ed0] pb-1 transition">
+              Write another review
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+   <footer class="bg-[linear-gradient(to_right,#064e3b,#10b981)] text-white px-[100px] py-[70px] animate-fadeIn">
+    <!-- Top Section -->
+    <div class="flex justify-between items-center mb-10">
+      <div class="flex items-center gap-4">
+        <!-- Brand Logo -->
+        <img src="img/arogya.png" alt="Brand Logo" class="w-12 h-12 rounded-full object-cover">
+        <div>
+          <h2 class="text-2xl font-bold">Pharmacy</h2>
+          <p class="text-base text-gray-200">store.</p>
+        </div>
+      </div>
+
+      <!-- Scroll to Top Button -->
+      <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+        class="bg-white text-[#1364FF] w-12 h-12 rounded-full flex justify-center items-center text-2xl font-bold hover:bg-gray-200 transition duration-300">
+        ↑
+      </button>
+    </div>
+
+    <hr class="border-gray-300 mb-10" />
+
+    <!-- Middle Section -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-10">
+      <!-- Company -->
+      <div>
+        <h3 class="font-semibold text-xl mb-4">Company</h3>
+        <ul class="space-y-3 text-gray-200 text-base">
+          <li><a href="#" class="hover:text-white transition">About Us</a></li>
+          <li><a href="#" class="hover:text-white transition">Products</a></li>
+          <li><a href="#" class="hover:text-white transition">Services</a></li>
+          <li><a href="#" class="hover:text-white transition">Blog & News</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div>
+        <h3 class="font-semibold text-xl mb-4">Resources</h3>
+        <ul class="space-y-3 text-gray-200 text-base">
+          <li><a href="#" class="hover:text-white transition">Educational</a></li>
+          <li><a href="#" class="hover:text-white transition">Mental Health Resources</a></li>
+          <li><a href="#" class="hover:text-white transition">Nutrition</a></li>
+          <li><a href="#" class="hover:text-white transition">Medication Guides</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div>
+        <h3 class="font-semibold text-xl mb-4">Follow Our Social Media</h3>
+        <div class="flex flex-wrap gap-4">
+          <button
+            class="bg-[#1E1E1E] text-white px-5 py-2 rounded-full text-base hover:bg-gray-700 transition">Instagram</button>
+          <button
+            class="bg-[#1E1E1E] text-white px-5 py-2 rounded-full text-base hover:bg-gray-700 transition">Youtube</button>
+          <button
+            class="bg-[#1E1E1E] text-white px-5 py-2 rounded-full text-base hover:bg-gray-700 transition">Facebook</button>
+          <button
+            class="bg-[#1E1E1E] text-white px-5 py-2 rounded-full text-base hover:bg-gray-700 transition">LinkedIn</button>
+          <button
+            class="bg-[#1E1E1E] text-white px-5 py-2 rounded-full text-base hover:bg-gray-700 transition">Twitter</button>
+          <button class="bg-[#1E1E1E] text-white px-5 py-2 rounded-full text-base hover:bg-gray-700 transition">Tik
+            Tok</button>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-gray-300 mb-6" />
+
+    <!-- Bottom Section -->
+    <div class="flex flex-col lg:flex-row justify-between items-center text-base text-gray-200">
+      <p>Copyright © 2026 Pharmacy Store | Design by Moitry</p>
+      <div class="flex gap-6 mt-4 lg:mt-0">
+        <a href="#" class="hover:text-white transition">Terms of Use</a>
+        <a href="#" class="hover:text-white transition">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Star Rating Logic
+    const stars = document.querySelectorAll('.star-btn');
+    let currentRating = 0;
+
+    stars.forEach(star => {
+      star.addEventListener('mouseover', function() {
+        highlightStars(this.getAttribute('data-value'));
+      });
+      star.addEventListener('mouseout', function() {
+        highlightStars(currentRating);
+      });
+      star.addEventListener('click', function() {
+        currentRating = parseInt(this.getAttribute('data-value'));
+        highlightStars(currentRating);
+      });
+    });
+
+    function highlightStars(val) {
+      stars.forEach(star => {
+        if (parseInt(star.getAttribute('data-value')) <= val) {
+          star.classList.remove('text-gray-300');
+          star.classList.add('text-yellow-400');
+        } else {
+          star.classList.remove('text-yellow-400');
+          star.classList.add('text-gray-300');
+        }
+      });
+    }
+
+    // Load More Reviews Function
+    function loadMoreReviews() {
+      const container = document.getElementById('reviewsContainer');
+      const loadBtn = document.getElementById('loadMoreBtn');
+      
+      loadBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Loading...';
+
+      setTimeout(() => {
+        const extraReviews = [
+          { name: "Tanvir Ahmed", text: "Extremely fast medicine delivery service during emergency hours. Saved our day!", service: "Home Delivery", stars: 5 },
+          { name: "Nusrat Jahan", text: "Authentic medicines and very polite delivery personnel. Will order again.", service: "Quality Products", stars: 5 },
+          { name: "Imran Hossain", text: "The website is very user-friendly. Uploading prescriptions takes just a second.", service: "Prescription", stars: 4 },
+          { name: "Farhana Akter", text: "Best online pharmacy in town. Great discount offers on monthly medical bills.", service: "Offers", stars: 5 },
+          { name: "Shariful Islam", text: "Got my items within 2 hours of ordering. Absolutely blown away by the speed.", service: "Fast Delivery", stars: 5 },
+          { name: "Moumita Roy", text: "Consulted with their medical advisor online. Very professional and helpful guidelines.", service: "Health Consultation", stars: 5 },
+          { name: "Rakibul Hasan", text: "Genuine products at a very reasonable price compared to local physical stores.", service: "Affordable", stars: 4 },
+          { name: "Sabrina Sultana", text: "Packaging was neat and secure. Temperature-sensitive items were handled with care.", service: "Safe Packaging", stars: 5 },
+          { name: "Zubair Al Mahmud", text: "24/7 support actually works! I had a query at midnight and they solved it.", service: "24/7 Support", stars: 5 },
+          { name: "Tasnim Tabassum", text: "Smooth UI and hassle-free payment gateway integration. Highly recommended.", service: "Quick Payment", stars: 4 },
+          { name: "Kamrul Hasan", text: "My go-to platform for all health essentials. Never faced a single delay.", service: "Reliable", stars: 5 },
+          { name: "Sumaiya Binte", text: "Wonderful experience overall. Keep up the good work team Pharmacy Store!", service: "Customer Care", stars: 5 }
+        ];
+
+        extraReviews.forEach((rev) => {
+          let starHtml = '';
+          for(let i=1; i<=5; i++) {
+            starHtml += `<i class="fa-solid fa-star ${i <= rev.stars ? 'text-yellow-400' : 'text-gray-300'}"></i>`;
+          }
+
+          const card = document.createElement('div');
+          card.className = "bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-500 transform hover:-translate-y-2 border border-gray-100 flex flex-col h-full";
+          card.innerHTML = `
+            <div class="flex justify-between items-start mb-4">
+              <div class="flex items-center gap-4">
+                <div class="w-14 h-14 rounded-full bg-[#DEE9FF] text-[#1364FF] font-bold flex items-center justify-center text-xl border-2 border-[#1364FF]/20">
+                  ${rev.name.charAt(0)}
+                </div>
+                <div>
+                  <h4 class="font-bold text-black text-lg">${rev.name}</h4>
+                  <p class="text-green-500 text-xs font-semibold flex items-center gap-1">
+                    <i class="fa-solid fa-circle-check"></i> Verified Buyer
+                  </p>
+                </div>
+              </div>
+              <div class="text-gray-300 text-4xl opacity-50"><i class="fa-solid fa-quote-right"></i></div>
+            </div>
+            <div class="text-sm mb-3">${starHtml}</div>
+            <p class="text-gray-600 leading-relaxed flex-grow">"${rev.text}"</p>
+            <div class="mt-5 flex gap-2">
+              <span class="bg-[#DEE9FF] text-[#1364FF] text-xs px-3 py-1 rounded-full font-medium">${rev.service}</span>
+            </div>
+          `;
+          container.appendChild(card);
+        });
+
+        document.getElementById('loadMoreContainer').style.display = 'none';
+      }, 800);
+    }
+
+    // Submit & Live Append Review Function
+    function handleReviewSubmit(event) {
+      event.preventDefault();
+
+      if(currentRating === 0) {
+        alert("Please select a star rating before submitting.");
+        return;
+      }
+
+      const name = document.getElementById('reviewerName').value;
+      const service = document.getElementById('reviewerService').value;
+      const text = document.getElementById('reviewerText').value;
+
+      // Build stars HTML
+      let starHtml = '';
+      for(let i=1; i<=5; i++) {
+        starHtml += `<i class="fa-solid fa-star ${i <= currentRating ? 'text-yellow-400' : 'text-gray-300'}"></i>`;
+      }
+
+      // Create new card element
+      const container = document.getElementById('reviewsContainer');
+      const newCard = document.createElement('div');
+      newCard.className = "bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-500 transform hover:-translate-y-2 border border-gray-100 flex flex-col h-full";
+      newCard.innerHTML = `
+        <div class="flex justify-between items-start mb-4">
+          <div class="flex items-center gap-4">
+            <div class="w-14 h-14 rounded-full bg-pink-100 text-pink-600 font-bold flex items-center justify-center text-xl border-2 border-pink-600/20">
+              ${name.charAt(0)}
+            </div>
+            <div>
+              <h4 class="font-bold text-black text-lg">${name}</h4>
+              <p class="text-green-500 text-xs font-semibold flex items-center gap-1">
+                <i class="fa-solid fa-circle-check"></i> Verified Buyer
+              </p>
+            </div>
+          </div>
+          <div class="text-gray-300 text-4xl opacity-50"><i class="fa-solid fa-quote-right"></i></div>
+        </div>
+        <div class="text-sm mb-3">${starHtml}</div>
+        <p class="text-gray-600 leading-relaxed flex-grow">"${text}"</p>
+        <div class="mt-5 flex gap-2">
+          <span class="bg-pink-100 text-pink-600 text-xs px-3 py-1 rounded-full font-medium">${service}</span>
+        </div>
+      `;
+
+      // Prepend to top of container
+      container.prepend(newCard);
+
+      // Update total review count
+      const countEl = document.getElementById('totalReviewCount');
+      let currentCount = parseInt(countEl.innerText) + 1;
+      countEl.innerText = currentCount;
+
+      // Hide Form & Show Success Message
+      document.getElementById('reviewForm').style.display = 'none';
+      document.getElementById('reviewSuccess').classList.remove('hidden');
+    }
+
+    // Reset Form
+    function resetReviewForm() {
+      const form = document.getElementById('reviewForm');
+      const successMsg = document.getElementById('reviewSuccess');
+
+      form.reset();
+      currentRating = 0;
+      highlightStars(0);
+
+      successMsg.classList.add('hidden');
+      form.style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>

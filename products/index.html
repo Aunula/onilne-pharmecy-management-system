@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Arogya Pharmacy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ============ TOP NAVBAR (fixed) ============ -->
+  <header class="navbar">
+    <div class="navbar__brand">
+      <span class="brand-mark">
+        <img src="img/arogya.png" alt="Brand Logo" class="brand-logo">
+      </span>
+      <div class="brand-text">
+        <span class="brand-text__name">P H A R M A C Y</span>
+        <span class="brand-text__tag">Store</span>
+      </div>
+    </div>
+
+    <div class="navbar__search">
+      <input type="text" placeholder="Search medicine, brand, or generic name…" id="searchInput">
+      <button aria-label="Search">
+        <svg viewBox="0 0 24 24" width="18" height="18">
+          <path fill="currentColor" d="M21 21l-4.35-4.35m1.35-5.15a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor"
+            stroke-width="2" fill="none" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+
+    <nav class="navbar__links">
+      <a href="../index.html">Home</a>
+      <a href="../about/about.html">About Us</a>
+      <a href="../products/index.html" class="active">Products</a>
+      <a href="../contactus/contactus.html">Contact Us</a>
+      <a href="../review/review.html">Reviews</a>
+    </nav>
+
+    <div class="navbar__actions">
+      <button class="pill-btn pill-btn--ghost">
+        <svg viewBox="0 0 24 24" width="16" height="16">
+          <path fill="currentColor"
+            d="M20.5 3.5A11 11 0 003.6 17.9L2 22l4.2-1.6a11 11 0 1014.3-16.9zM12 20a8 8 0 01-4.1-1.1l-.3-.2-2.4.9.9-2.3-.2-.3A8 8 0 1112 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1s-.6.8-.7.9-.3.2-.5.1a6.6 6.6 0 01-3.2-2.8c-.2-.4.2-.4.6-1.3.1-.2 0-.4 0-.5s-.5-1.2-.7-1.7-.4-.4-.5-.4h-.5a.9.9 0 00-.6.3 2.7 2.7 0 00-.9 2 4.7 4.7 0 001 2.5 10.7 10.7 0 004.6 4.1c1.6.7 2.2.6 2.7.5a2.3 2.3 0 001.5-1.1 1.9 1.9 0 000-1.1c-.1-.1-.3-.2-.5-.3z" />
+        </svg>
+        Order on WhatsApp
+      </button>
+      <button class="pill-btn pill-btn--outline">
+        <svg viewBox="0 0 24 24" width="16" height="16">
+          <path fill="currentColor"
+            d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm0 2.5L18.5 9H14V4.5zM8 13h8v1.5H8V13zm0 3h8v1.5H8V16zm0-6h4v1.5H8V10z" />
+        </svg>
+        Upload Rx
+      </button>
+      <button class="pill-btn pill-btn--solid" id="loginBtn">Register</button>
+    </div>
+
+    <!-- Floating cart summary -->
+    <div class="cart-chip" id="cartChip">
+      <svg viewBox="0 0 24 24" width="20" height="20">
+        <path fill="currentColor"
+          d="M7 22a2 2 0 100-4 2 2 0 000 4zm10 0a2 2 0 100-4 2 2 0 000 4zM7.2 14h9.9a1 1 0 00.98-.79L20 5.6H6.2M2 3h2l.6 3M6.2 3.6L4 3" />
+      </svg>
+      <span class="cart-chip__count" id="cartCount">0</span>
+      <span class="cart-chip__total" id="cartTotal">৳ 0</span>
+    </div>
+  </header>
+
+  <div class="app-shell">
+
+    <!-- ============ LEFT SIDEBAR (fixed) ============ -->
+    <aside class="sidebar">
+      <div class="sidebar__head">
+        <svg viewBox="0 0 24 24" width="18" height="18">
+          <path fill="currentColor" d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" fill="none" />
+        </svg>
+        Categories
+      </div>
+      <ul class="sidebar__list" id="categoryList">
+        <li class="active" data-cat="all"><span class="dot dot--hot"></span>Hot Deal Products</li>
+        <li data-cat="skincare"><span class="dot dot--skin"></span>Skin Care</li>
+        <li data-cat="supplements"><span class="dot dot--supp"></span>Supplements &amp; Vitamins</li>
+        <li data-cat="prescription"><span class="dot dot--rx"></span>Prescription Medicine</li>
+        <li data-cat="women"><span class="dot dot--women"></span>Women's Care</li>
+        <li data-cat="men"><span class="dot dot--men"></span>Men's Care</li>
+        <li data-cat="herbal"><span class="dot dot--herbal"></span>Herbal Supplements</li>
+        <li data-cat="otc"><span class="dot dot--otc"></span>OTC Medicine</li>
+        <li data-cat="surgical"><span class="dot dot--surgical"></span>Surgical Products</li>
+        <li data-cat="baby"><span class="dot dot--baby"></span>Baby Products</li>
+      </ul>
+      <div class="sidebar__promo">
+        <p class="sidebar__promo-eyebrow">Free delivery</p>
+        <p class="sidebar__promo-title">On orders above ৳1000 in Chattogram</p>
+      </div>
+    </aside>
+
+    <!-- ============ MAIN SCROLLABLE CONTENT ============ -->
+    <main class="content">
+
+      <section class="hero">
+        <div class="hero__text">
+          <p class="hero__eyebrow">Genuine medicine · Verified pharmacists · Same-day delivery</p>
+          <h1>Your neighborhood pharmacy,<br>now a click away.</h1>
+          <p class="hero__sub">Order prescription and everyday health essentials — packed carefully, delivered on time.
+          </p>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">4,200+</span>
+          <span class="hero__stat-label">products in stock</span>
+        </div>
+      </section>
+
+      <section class="section" id="hot-deals">
+        <div class="section__head">
+          <h2>Hot Deal Products</h2>
+          <span class="section__rule"></span>
+        </div>
+        <div class="product-grid" id="hotDealsGrid"></div>
+      </section>
+
+      <section class="section" id="prescription">
+        <div class="section__head">
+          <h2>Prescription Medicine</h2>
+          <span class="section__rule"></span>
+        </div>
+        <div class="product-grid" id="prescriptionGrid"></div>
+      </section>
+
+      <section class="section" id="supplements">
+        <div class="section__head">
+          <h2>Supplements &amp; Vitamins</h2>
+          <span class="section__rule"></span>
+        </div>
+        <div class="product-grid" id="supplementsGrid"></div>
+      </section>
+
+            <section class="section" id="skincare">
+        <div class="section__head">
+          <h2>Skin Care</h2>
+          <span class="section__rule"></span>
+        </div>
+        <div class="product-grid" id="skincareGrid"></div>
+      </section>
+
+      <footer class="footer">
+        <p>© 2026 MediNest Pharmacy. Demo storefront for illustration purposes.</p>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- flying clone target for add-to-cart animation -->
+  <div class="fly-layer" id="flyLayer"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
