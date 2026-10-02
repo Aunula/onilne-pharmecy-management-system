@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Store - Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <div class="main-container">
+        <!-- Pharmacy Branding -->
+        <div class="brand-section">
+            <div class="logo-container">
+                <!-- Your actual logo image -->
+                <img src="../img/arogya.png" alt="Pharmacy Logo" class="logo-img">
+                <!-- Keep the glow effect behind the image -->
+                <div class="logo-glow"></div>
+            </div>
+            <h1 class="main-title">Welcome to Your Trusted Pharmacy</h1>
+            <p class="sub-title">Your Health, Our Priority</p>
+        </div>
+
+        <!-- Card -->
+        <div class="card-wrapper">
+            <div class="auth-card" id="authCard">
+                <!-- Card Header -->
+                <div class="card-header">
+                    <div class="header-bg"></div>
+                    <div class="header-content">
+                        <h2 class="card-title" id="cardTitle">Create Your Account</h2>
+                        <p class="card-subtitle" id="cardSubtitle">Join our pharmacy family today</p>
+                    </div>
+                </div>
+
+                <!-- Toggle Tabs -->
+                <div class="tab-container">
+                    <button class="tab-btn" id="signInTab" onclick="switchTab('signin')">Sign In</button>
+                    <button class="tab-btn active" id="signUpTab" onclick="switchTab('signup')">Sign Up</button>
+                    <div class="tab-indicator" id="tabIndicator"></div>
+                </div>
+
+                <!-- Sign In Form -->
+                <form id="signInForm" class="auth-form hidden">
+                    <div class="input-wrapper">
+                        <div class="input-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <input type="email" id="signinEmail" placeholder="Email Address" required>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <div class="input-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                            </svg>
+                        </div>
+                        <input type="password" id="signinPassword" placeholder="Password" required>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Remember me
+                        </label>
+                        <a href="#" class="forgot-link">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Sign In</span>
+                        <span class="btn-loader hidden"></span>
+                    </button>
+                </form>
+
+                <!-- Sign Up Form -->
+                <form id="signUpForm" class="auth-form">
+                    <div class="input-wrapper">
+                        <div class="input-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <input type="text" id="name" placeholder="Full Name" required>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <div class="input-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <input type="tel" id="phone" placeholder="Phone Number" required>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <div class="input-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <input type="email" id="email" placeholder="Gmail Address" required>
+                    </div>
+
+                    <div class="input-wrapper textarea-wrapper">
+                        <div class="input-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <textarea id="address" placeholder="Address" required rows="2"></textarea>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <div class="input-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                            </svg>
+                        </div>
+                        <input type="password" id="password" placeholder="Password" required>
+                        <div class="strength-meter">
+                            <div class="strength-fill" id="strengthFill"></div>
+                        </div>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <div class="input-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                            </svg>
+                        </div>
+                        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                    </div>
+
+                    <label class="checkbox-label terms-label">
+                        <input type="checkbox" id="terms" required>
+                        <span class="checkmark"></span>
+                        I agree to the <a href="#" class="terms-link">Terms and Conditions</a>
+                    </label>
+
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Sign Up</span>
+                        <span class="btn-loader hidden"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
